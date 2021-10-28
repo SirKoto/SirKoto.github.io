@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CUDA | Pol&#39;s porfolio</title>
+    <link>https://SirKoto.github.io/tag/cuda/</link>
+      <atom:link href="https://SirKoto.github.io/tag/cuda/index.xml" rel="self" type="application/rss+xml" />
+    <description>CUDA</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© {2021} Me</copyright><lastBuildDate>Sun, 21 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://SirKoto.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>CUDA</title>
+      <link>https://SirKoto.github.io/tag/cuda/</link>
+    </image>
+    
+    <item>
+      <title>Semantic distances between GloVe&#39;s word embedings</title>
+      <link>https://SirKoto.github.io/project/semantic-distances/</link>
+      <pubDate>Sun, 21 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>https://SirKoto.github.io/project/semantic-distances/</guid>
+      <description>&lt;p&gt;Content TODO&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
