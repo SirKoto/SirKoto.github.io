@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>8 | Pol&#39;s porfolio</title>
+    <link>https://SirKoto.github.io/publication-type/8/</link>
+      <atom:link href="https://SirKoto.github.io/publication-type/8/index.xml" rel="self" type="application/rss+xml" />
+    <description>8</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021 Pol Martín</copyright><lastBuildDate>Thu, 21 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://SirKoto.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>8</title>
+      <link>https://SirKoto.github.io/publication-type/8/</link>
+    </image>
+    
+    <item>
+      <title>Beam lattice data in additive manufacturing - WO2021011049A1</title>
+      <link>https://SirKoto.github.io/publication/beamlattices/</link>
+      <pubDate>Thu, 21 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://SirKoto.github.io/publication/beamlattices/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Object model transformations - WO2021011077A1</title>
+      <link>https://SirKoto.github.io/publication/sfd/</link>
+      <pubDate>Thu, 21 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://SirKoto.github.io/publication/sfd/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
