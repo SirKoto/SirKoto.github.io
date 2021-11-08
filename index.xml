@@ -17,8 +17,94 @@
       <link>https://SirKoto.github.io/project/mpm-simulator/</link>
       <pubDate>Mon, 14 Sep 2020 00:00:00 +0000</pubDate>
       <guid>https://SirKoto.github.io/project/mpm-simulator/</guid>
-      <description>&lt;p&gt;Content TODO&lt;/p&gt;
-</description>
+      <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
+&lt;p&gt;Bachelor thesis on simulating arbitrary deformable materials, following the Material Point Method, in its Moving Least Squares version (&lt;a href=&#34;https://github.com/yuanming-hu/taichi_mpm&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Yuanming et al.&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;Wrote an introductory document to MPM, from the point of view of an Informatic Engineer student. The publication can be found &lt;a href=&#34;https://SirKoto.github.io/publication/mpm-thesis/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;A versatile implementation was also developed, with its CPU and GPU versions, able to create arbitrary scenes with custom parameters.&lt;/p&gt;
+&lt;h2 id=&#34;awards&#34;&gt;Awards&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Decorated with the best informatics engineering bachelor final thesis of the promotion 2019-2020 of the Faculty of Informatics of Barcelona. By &lt;a href=&#34;https://www.fibalumni.net/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;FIB-Alumni&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Granted with the best bachelor final thesis in Spain related to Computer Graphics of the promotions 2019-2021. By the &lt;a href=&#34;https://www.virvig.eu/ceig2021/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Spanish congress of Computer Graphics&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;results&#34;&gt;Results&lt;/h2&gt;
+&lt;p&gt;Some GIFs of the obtained results can be seen here:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;A comparison of different stiffness materials, with some hardening:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://github.com/SirKoto/MPMSimulator/blob/master/images/cmp4.gif?raw=true&#34; alt=&#34;Falldown GIF&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Preserve all deformation as elastic:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://github.com/SirKoto/MPMSimulator/blob/master/images/superDeffCor.gif?raw=true&#34; alt=&#34;Great Deformation Gif&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Huge plastic deformations allow to simulate fluids:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://github.com/SirKoto/MPMSimulator/blob/master/images/snow2.gif?raw=true&#34; alt=&#34;Snow Gif&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Many more GIFs can be found in this &lt;a href=&#34;https://drive.google.com/drive/folders/1t-WDatiCCti9cPGHokXEi5BOoFrqEd-R?usp=sharing&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Google Drive Folder&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;If you want to see more results, you can watch the following video. Be sure to increase the quality to HD.&lt;/p&gt;
+&lt;iframe src=&#34;https://drive.google.com/file/d/1k0eGkb2ltT_0sRpTId-lWCAh5Sybbbti/preview&#34; width=&#34;640&#34; height=&#34;480&#34; allow=&#34;autoplay&#34;&gt;&lt;/iframe&gt;</description>
     </item>
     
     <item>
