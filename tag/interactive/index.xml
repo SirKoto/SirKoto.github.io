@@ -7,10 +7,29 @@
     <description>Interactive</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021 Pol Martín</copyright><lastBuildDate>Sun, 20 Jun 2021 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://SirKoto.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <url>https://SirKoto.github.io/media/icon_hu36b41f71f33cc8e1aec8948b0e13c529_2050_512x512_fill_lanczos_center_3.png</url>
       <title>Interactive</title>
       <link>https://SirKoto.github.io/tag/interactive/</link>
     </image>
+    
+    <item>
+      <title>Vulkan Game Engine</title>
+      <link>https://SirKoto.github.io/project/g-renderer/</link>
+      <pubDate>Mon, 26 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>https://SirKoto.github.io/project/g-renderer/</guid>
+      <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
+&lt;p&gt;Simple Game Engine using Vulkan 1.2, implementing common Game Engine features and capabilities.&lt;/p&gt;
+&lt;p&gt;The software also implements a custom job system using system fibers, following Naughty Dog&amp;rsquo;s talk on GDC2015 &amp;ldquo;&lt;a href=&#34;https://www.gdcvault.com/play/1022186/Parallelizing-the-Naughty-Dog-Engine&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Parallelizing the Naughty Dog Engine Using Fibers&lt;/a&gt;&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;This Engine implements common characteristics as interactable GameObject oriented scenes, scene/project serialization, model instancing, and multi-threaded command buffer recording.&lt;/p&gt;
+&lt;p&gt;Some algorithms for geometry processing and time-critical rendering have also been implemented, such as:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Vertex-Clustering mesh simplification. Fast simplification using octrees, and configurable with normal clustering and different error metrics.&lt;/li&gt;
+&lt;li&gt;Automatic LOD meshes creation, which also computes multiple LODs at the same time for a performant implementation.&lt;/li&gt;
+&lt;li&gt;Critical-Rendering automatic LOD selection to achieve stable fps. The objective frame delta time is configurable.&lt;/li&gt;
+&lt;li&gt;Cell-to-Cell visibility. The Engine includes an editor to generate cells and walls; it generates a data structure that allows to precompute the visibility of the scene objects and cull non-visible objects at run-time. This uses a conservative supercover Bresenham approach.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>MPM Simulator (Bachelor thesis)</title>
@@ -108,20 +127,85 @@
     </item>
     
     <item>
-      <title>Vulkan Game Engine</title>
-      <link>https://SirKoto.github.io/project/g-renderer/</link>
-      <pubDate>Mon, 14 Sep 2020 00:00:00 +0000</pubDate>
-      <guid>https://SirKoto.github.io/project/g-renderer/</guid>
-      <description>&lt;p&gt;Content TODO&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>L-Systems</title>
       <link>https://SirKoto.github.io/project/l-systems/</link>
       <pubDate>Sun, 20 Jun 2021 00:00:00 +0000</pubDate>
       <guid>https://SirKoto.github.io/project/l-systems/</guid>
-      <description>&lt;p&gt;Content TODO&lt;/p&gt;
+      <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
+&lt;p&gt;Following the guidelines of Lindenmayer&amp;rsquo;s &amp;ldquo;&lt;a href=&#34;https://en.wikipedia.org/wiki/The_Algorithmic_Beauty_of_Plants&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The Algorithmic Beauty of Plants&lt;/a&gt;&amp;rdquo;, this project implements an L-system parser to create different patterns found in nature.&lt;/p&gt;
+&lt;p&gt;In particular, this project implemented with C++ and OpenGL, implements the following features:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Graphical modeling using L-systems&lt;/li&gt;
+&lt;li&gt;Custom constants&lt;/li&gt;
+&lt;li&gt;3D rotations&lt;/li&gt;
+&lt;li&gt;Stochastic rules&lt;/li&gt;
+&lt;li&gt;Interactive rendering&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;results&#34;&gt;Results&lt;/h2&gt;
+&lt;p&gt;Some of the examples provided with the program are these:&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://SirKoto.github.io/projects_images/l_sys/1.jpg&#34; alt=&#34;image1&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://SirKoto.github.io/projects_images/l_sys/2.jpg&#34; alt=&#34;image2&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://SirKoto.github.io/projects_images/l_sys/3.jpg&#34; alt=&#34;image3&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
 </description>
     </item>
     

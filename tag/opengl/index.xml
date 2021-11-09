@@ -5,9 +5,9 @@
     <link>https://SirKoto.github.io/tag/opengl/</link>
       <atom:link href="https://SirKoto.github.io/tag/opengl/index.xml" rel="self" type="application/rss+xml" />
     <description>OpenGL</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021 Pol Martín</copyright><lastBuildDate>Sun, 20 Jun 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021 Pol Martín</copyright><lastBuildDate>Fri, 03 Sep 2021 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://SirKoto.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <url>https://SirKoto.github.io/media/icon_hu36b41f71f33cc8e1aec8948b0e13c529_2050_512x512_fill_lanczos_center_3.png</url>
       <title>OpenGL</title>
       <link>https://SirKoto.github.io/tag/opengl/</link>
     </image>
@@ -110,9 +110,45 @@
     <item>
       <title>GPU Visibility algorithms comparison</title>
       <link>https://SirKoto.github.io/project/visibility-comparison/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 03 Sep 2021 00:00:00 +0000</pubDate>
       <guid>https://SirKoto.github.io/project/visibility-comparison/</guid>
-      <description>&lt;p&gt;Content TODO&lt;/p&gt;
+      <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
+&lt;p&gt;Program, implemented in C++, which generates a scene with a set of Armadillos (346k triangles, 173k vertices per model) on a grid. Then the camera follows a route that tries to emulate many different camera angles.&lt;/p&gt;
+&lt;p&gt;This is used to benchmark the framerate obtained with the following algorithms:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Unoptimized implementation&lt;/li&gt;
+&lt;li&gt;View-frustum culling&lt;/li&gt;
+&lt;li&gt;GPU Occlusion queries culling&lt;/li&gt;
+&lt;li&gt;CHC++: Frustum culling+occlusion queries (&lt;a href=&#34;https://dcgi.fel.cvut.cz/home/bittner/publications/chc&amp;#43;&amp;#43;.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;O. Mattausch &amp;amp; J. Bittner &amp;amp; M. Wimme&lt;/a&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;results&#34;&gt;Results&lt;/h2&gt;
+&lt;p&gt;The following chart shows the resulting frame rates of running the same scene with the different algorithms (Lower is better).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://SirKoto.github.io/projects_images/visib_cmp/results.png&#34; alt=&#34;image&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s easy to see that the Occlusion Queries and CHC++ algorithms are superior to simple frustum culling. Nevertheless, it is important to note that the occlusion queries implementation uses the information of the previous frame, thus it can cause some poping.&lt;/p&gt;
+&lt;p&gt;On the other hand, CHC++ works with current frame visibility, not causing visible artifacts, but because of its internal data structures sometimes brusque camera movements may cause noticeable frame-rate drops.&lt;/p&gt;
+&lt;h2 id=&#34;more-information&#34;&gt;More information&amp;hellip;&lt;/h2&gt;
+&lt;p&gt;For more information about the actual implementation and results see the &lt;a href=&#34;https://github.com/SirKoto/visibility_comparison/blob/main/Visibility_Report.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Visibility_Report.pdf&lt;/a&gt; file.&lt;/p&gt;
+&lt;p&gt;Developed for the Fast Realistic Rendering course of the Master in Innovation and Research in Informatics, at the Barcelona School of Informatics.&lt;/p&gt;
 </description>
     </item>
     
@@ -121,7 +157,81 @@
       <link>https://SirKoto.github.io/project/l-systems/</link>
       <pubDate>Sun, 20 Jun 2021 00:00:00 +0000</pubDate>
       <guid>https://SirKoto.github.io/project/l-systems/</guid>
-      <description>&lt;p&gt;Content TODO&lt;/p&gt;
+      <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
+&lt;p&gt;Following the guidelines of Lindenmayer&amp;rsquo;s &amp;ldquo;&lt;a href=&#34;https://en.wikipedia.org/wiki/The_Algorithmic_Beauty_of_Plants&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The Algorithmic Beauty of Plants&lt;/a&gt;&amp;rdquo;, this project implements an L-system parser to create different patterns found in nature.&lt;/p&gt;
+&lt;p&gt;In particular, this project implemented with C++ and OpenGL, implements the following features:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Graphical modeling using L-systems&lt;/li&gt;
+&lt;li&gt;Custom constants&lt;/li&gt;
+&lt;li&gt;3D rotations&lt;/li&gt;
+&lt;li&gt;Stochastic rules&lt;/li&gt;
+&lt;li&gt;Interactive rendering&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;results&#34;&gt;Results&lt;/h2&gt;
+&lt;p&gt;Some of the examples provided with the program are these:&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://SirKoto.github.io/projects_images/l_sys/1.jpg&#34; alt=&#34;image1&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://SirKoto.github.io/projects_images/l_sys/2.jpg&#34; alt=&#34;image2&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://SirKoto.github.io/projects_images/l_sys/3.jpg&#34; alt=&#34;image3&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
 </description>
     </item>
     

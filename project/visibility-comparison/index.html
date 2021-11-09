@@ -73,6 +73,9 @@
 
   
   
+    
+    <script src="/js/mathjax-config.js"></script>
+  
 
   
 
@@ -220,9 +223,9 @@
 
       
       
-        
-      
 
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
       
     
       
@@ -273,8 +276,8 @@
     <link rel="manifest" href="/manifest.webmanifest" />
   
 
-  <link rel="icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_3.png" />
-  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_180x180_fill_lanczos_center_3.png" />
+  <link rel="icon" type="image/png" href="/media/icon_hu36b41f71f33cc8e1aec8948b0e13c529_2050_32x32_fill_lanczos_center_3.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu36b41f71f33cc8e1aec8948b0e13c529_2050_180x180_fill_lanczos_center_3.png" />
 
   <link rel="canonical" href="https://SirKoto.github.io/project/visibility-comparison/" />
 
@@ -304,7 +307,12 @@
     <meta property="twitter:image" content="https://SirKoto.github.io/project/visibility-comparison/featured.png" /><meta property="og:locale" content="en-us" />
   
     
+      <meta
+        property="article:published_time"
+        content="2021-09-03T00:00:00&#43;00:00"
+      />
     
+    <meta property="article:modified_time" content="2021-09-03T00:00:00&#43;00:00">
   
 
   
@@ -334,8 +342,8 @@
     "https://SirKoto.github.io/project/visibility-comparison/featured.png"
   ],
   
-  "datePublished": "0001-01-01T00:00:00Z",
-  "dateModified": "0001-01-01T00:00:00Z",
+  "datePublished": "2021-09-03T00:00:00Z",
+  "dateModified": "2021-09-03T00:00:00Z",
   
   "author": {
     "@type": "Person",
@@ -347,7 +355,7 @@
     "name": "Pol's porfolio",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://SirKoto.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png"
+      "url": "https://SirKoto.github.io/media/icon_hu36b41f71f33cc8e1aec8948b0e13c529_2050_192x192_fill_lanczos_center_3.png"
     }
   },
   "description": "Scalable implementation of multiple visibility culling algorithms for benchmarking."
@@ -731,7 +739,7 @@
     
       
     
-    Jan 1, 0001
+    Sep 3, 2021
   </span>
   
 
@@ -819,7 +827,43 @@
   <div class="article-container">
 
     <div class="article-style">
-      <p>Content TODO</p>
+      <h2 id="summary">Summary</h2>
+<p>Program, implemented in C++, which generates a scene with a set of Armadillos (346k triangles, 173k vertices per model) on a grid. Then the camera follows a route that tries to emulate many different camera angles.</p>
+<p>This is used to benchmark the framerate obtained with the following algorithms:</p>
+<ul>
+<li>Unoptimized implementation</li>
+<li>View-frustum culling</li>
+<li>GPU Occlusion queries culling</li>
+<li>CHC++: Frustum culling+occlusion queries (<a href="https://dcgi.fel.cvut.cz/home/bittner/publications/chc&#43;&#43;.pdf" target="_blank" rel="noopener">O. Mattausch &amp; J. Bittner &amp; M. Wimme</a>).</li>
+</ul>
+<h2 id="results">Results</h2>
+<p>The following chart shows the resulting frame rates of running the same scene with the different algorithms (Lower is better).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/projects_images/visib_cmp/results.png" alt="image" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>It&rsquo;s easy to see that the Occlusion Queries and CHC++ algorithms are superior to simple frustum culling. Nevertheless, it is important to note that the occlusion queries implementation uses the information of the previous frame, thus it can cause some poping.</p>
+<p>On the other hand, CHC++ works with current frame visibility, not causing visible artifacts, but because of its internal data structures sometimes brusque camera movements may cause noticeable frame-rate drops.</p>
+<h2 id="more-information">More information&hellip;</h2>
+<p>For more information about the actual implementation and results see the <a href="https://github.com/SirKoto/visibility_comparison/blob/main/Visibility_Report.pdf" target="_blank" rel="noopener">Visibility_Report.pdf</a> file.</p>
+<p>Developed for the Fast Realistic Rendering course of the Master in Innovation and Research in Informatics, at the Barcelona School of Informatics.</p>
 
     </div>
 

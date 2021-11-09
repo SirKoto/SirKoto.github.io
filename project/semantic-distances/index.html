@@ -73,6 +73,9 @@
 
   
   
+    
+    <script src="/js/mathjax-config.js"></script>
+  
 
   
 
@@ -220,9 +223,9 @@
 
       
       
-        
-      
 
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
       
     
       
@@ -273,8 +276,8 @@
     <link rel="manifest" href="/manifest.webmanifest" />
   
 
-  <link rel="icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_3.png" />
-  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_180x180_fill_lanczos_center_3.png" />
+  <link rel="icon" type="image/png" href="/media/icon_hu36b41f71f33cc8e1aec8948b0e13c529_2050_32x32_fill_lanczos_center_3.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu36b41f71f33cc8e1aec8948b0e13c529_2050_180x180_fill_lanczos_center_3.png" />
 
   <link rel="canonical" href="https://SirKoto.github.io/project/semantic-distances/" />
 
@@ -352,7 +355,7 @@
     "name": "Pol's porfolio",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://SirKoto.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png"
+      "url": "https://SirKoto.github.io/media/icon_hu36b41f71f33cc8e1aec8948b0e13c529_2050_192x192_fill_lanczos_center_3.png"
     }
   },
   "description": "GPU distance computation and search using cosine similarities between words encoded in a vector space."
@@ -832,7 +835,14 @@
   <div class="article-container">
 
     <div class="article-style">
-      <p>Content TODO</p>
+      <h2 id="summary">Summary</h2>
+<p>GPU implementation to compute word similarities using the <em>word embedding</em> model of <a href="https://nlp.stanford.edu/projects/glove/" target="_blank" rel="noopener">GloVe</a>, which contains $2.2\cdot10^6$ words.</p>
+<p>Given a word, the program computes the cosine distance between all other words in the database, where the cosine distance is defined as follows:</p>
+<p>$$ cosDist(\vec A, \vec B) = \frac{\vec A \cdot \vec B}{|\vec A||\vec B|}$$</p>
+<p>Because we are using angles to compute the similarities, we can also compute pairs of words with similar relationships. An example is if we search for <em>king - queen</em> we get (among others) <em>men - women</em>.</p>
+<p>As the program will compute this distance between all other words, a GPU sorting and filtering algorithm have been implemented. It can retrieve the <strong>N</strong> words with the highest similarity.</p>
+<h2 id="results">Results</h2>
+<p>The final implementation, making use of warp synchronization and minimizing memory usage in the sorting, can compute the all similarities in under 10ms.</p>
 
     </div>
 
@@ -846,6 +856,8 @@
 <div class="article-tags">
   
   <a class="badge badge-light" href="/tag/cuda/">CUDA</a>
+  
+  <a class="badge badge-light" href="/tag/c-/">C&#43;&#43;</a>
   
 </div>
 

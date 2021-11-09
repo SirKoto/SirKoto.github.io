@@ -7,7 +7,7 @@
     <description>CUDA</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021 Pol Martín</copyright><lastBuildDate>Sun, 21 Jun 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://SirKoto.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <url>https://SirKoto.github.io/media/icon_hu36b41f71f33cc8e1aec8948b0e13c529_2050_512x512_fill_lanczos_center_3.png</url>
       <title>CUDA</title>
       <link>https://SirKoto.github.io/tag/cuda/</link>
     </image>
@@ -17,7 +17,14 @@
       <link>https://SirKoto.github.io/project/semantic-distances/</link>
       <pubDate>Sun, 21 Jun 2020 00:00:00 +0000</pubDate>
       <guid>https://SirKoto.github.io/project/semantic-distances/</guid>
-      <description>&lt;p&gt;Content TODO&lt;/p&gt;
+      <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
+&lt;p&gt;GPU implementation to compute word similarities using the &lt;em&gt;word embedding&lt;/em&gt; model of &lt;a href=&#34;https://nlp.stanford.edu/projects/glove/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GloVe&lt;/a&gt;, which contains $2.2\cdot10^6$ words.&lt;/p&gt;
+&lt;p&gt;Given a word, the program computes the cosine distance between all other words in the database, where the cosine distance is defined as follows:&lt;/p&gt;
+&lt;p&gt;$$ cosDist(\vec A, \vec B) = \frac{\vec A \cdot \vec B}{|\vec A||\vec B|}$$&lt;/p&gt;
+&lt;p&gt;Because we are using angles to compute the similarities, we can also compute pairs of words with similar relationships. An example is if we search for &lt;em&gt;king - queen&lt;/em&gt; we get (among others) &lt;em&gt;men - women&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;As the program will compute this distance between all other words, a GPU sorting and filtering algorithm have been implemented. It can retrieve the &lt;strong&gt;N&lt;/strong&gt; words with the highest similarity.&lt;/p&gt;
+&lt;h2 id=&#34;results&#34;&gt;Results&lt;/h2&gt;
+&lt;p&gt;The final implementation, making use of warp synchronization and minimizing memory usage in the sorting, can compute the all similarities in under 10ms.&lt;/p&gt;
 </description>
     </item>
     

@@ -7,10 +7,29 @@
     <description>Pol&#39;s porfolio</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021 Pol Martín</copyright><lastBuildDate>Wed, 22 Sep 2021 16:30:00 +0000</lastBuildDate>
     <image>
-      <url>https://SirKoto.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <url>https://SirKoto.github.io/media/icon_hu36b41f71f33cc8e1aec8948b0e13c529_2050_512x512_fill_lanczos_center_3.png</url>
       <title>Pol&#39;s porfolio</title>
       <link>https://SirKoto.github.io/</link>
     </image>
+    
+    <item>
+      <title>Vulkan Game Engine</title>
+      <link>https://SirKoto.github.io/project/g-renderer/</link>
+      <pubDate>Mon, 26 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>https://SirKoto.github.io/project/g-renderer/</guid>
+      <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
+&lt;p&gt;Simple Game Engine using Vulkan 1.2, implementing common Game Engine features and capabilities.&lt;/p&gt;
+&lt;p&gt;The software also implements a custom job system using system fibers, following Naughty Dog&amp;rsquo;s talk on GDC2015 &amp;ldquo;&lt;a href=&#34;https://www.gdcvault.com/play/1022186/Parallelizing-the-Naughty-Dog-Engine&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Parallelizing the Naughty Dog Engine Using Fibers&lt;/a&gt;&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;This Engine implements common characteristics as interactable GameObject oriented scenes, scene/project serialization, model instancing, and multi-threaded command buffer recording.&lt;/p&gt;
+&lt;p&gt;Some algorithms for geometry processing and time-critical rendering have also been implemented, such as:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Vertex-Clustering mesh simplification. Fast simplification using octrees, and configurable with normal clustering and different error metrics.&lt;/li&gt;
+&lt;li&gt;Automatic LOD meshes creation, which also computes multiple LODs at the same time for a performant implementation.&lt;/li&gt;
+&lt;li&gt;Critical-Rendering automatic LOD selection to achieve stable fps. The objective frame delta time is configurable.&lt;/li&gt;
+&lt;li&gt;Cell-to-Cell visibility. The Engine includes an editor to generate cells and walls; it generates a data structure that allows to precompute the visibility of the scene objects and cull non-visible objects at run-time. This uses a conservative supercover Bresenham approach.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>MPM Simulator (Bachelor thesis)</title>
@@ -108,20 +127,47 @@
     </item>
     
     <item>
-      <title>Vulkan Game Engine</title>
-      <link>https://SirKoto.github.io/project/g-renderer/</link>
-      <pubDate>Mon, 14 Sep 2020 00:00:00 +0000</pubDate>
-      <guid>https://SirKoto.github.io/project/g-renderer/</guid>
-      <description>&lt;p&gt;Content TODO&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>GPU Visibility algorithms comparison</title>
       <link>https://SirKoto.github.io/project/visibility-comparison/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 03 Sep 2021 00:00:00 +0000</pubDate>
       <guid>https://SirKoto.github.io/project/visibility-comparison/</guid>
-      <description>&lt;p&gt;Content TODO&lt;/p&gt;
+      <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
+&lt;p&gt;Program, implemented in C++, which generates a scene with a set of Armadillos (346k triangles, 173k vertices per model) on a grid. Then the camera follows a route that tries to emulate many different camera angles.&lt;/p&gt;
+&lt;p&gt;This is used to benchmark the framerate obtained with the following algorithms:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Unoptimized implementation&lt;/li&gt;
+&lt;li&gt;View-frustum culling&lt;/li&gt;
+&lt;li&gt;GPU Occlusion queries culling&lt;/li&gt;
+&lt;li&gt;CHC++: Frustum culling+occlusion queries (&lt;a href=&#34;https://dcgi.fel.cvut.cz/home/bittner/publications/chc&amp;#43;&amp;#43;.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;O. Mattausch &amp;amp; J. Bittner &amp;amp; M. Wimme&lt;/a&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;results&#34;&gt;Results&lt;/h2&gt;
+&lt;p&gt;The following chart shows the resulting frame rates of running the same scene with the different algorithms (Lower is better).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://SirKoto.github.io/projects_images/visib_cmp/results.png&#34; alt=&#34;image&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s easy to see that the Occlusion Queries and CHC++ algorithms are superior to simple frustum culling. Nevertheless, it is important to note that the occlusion queries implementation uses the information of the previous frame, thus it can cause some poping.&lt;/p&gt;
+&lt;p&gt;On the other hand, CHC++ works with current frame visibility, not causing visible artifacts, but because of its internal data structures sometimes brusque camera movements may cause noticeable frame-rate drops.&lt;/p&gt;
+&lt;h2 id=&#34;more-information&#34;&gt;More information&amp;hellip;&lt;/h2&gt;
+&lt;p&gt;For more information about the actual implementation and results see the &lt;a href=&#34;https://github.com/SirKoto/visibility_comparison/blob/main/Visibility_Report.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Visibility_Report.pdf&lt;/a&gt; file.&lt;/p&gt;
+&lt;p&gt;Developed for the Fast Realistic Rendering course of the Master in Innovation and Research in Informatics, at the Barcelona School of Informatics.&lt;/p&gt;
 </description>
     </item>
     
@@ -130,7 +176,81 @@
       <link>https://SirKoto.github.io/project/l-systems/</link>
       <pubDate>Sun, 20 Jun 2021 00:00:00 +0000</pubDate>
       <guid>https://SirKoto.github.io/project/l-systems/</guid>
-      <description>&lt;p&gt;Content TODO&lt;/p&gt;
+      <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
+&lt;p&gt;Following the guidelines of Lindenmayer&amp;rsquo;s &amp;ldquo;&lt;a href=&#34;https://en.wikipedia.org/wiki/The_Algorithmic_Beauty_of_Plants&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The Algorithmic Beauty of Plants&lt;/a&gt;&amp;rdquo;, this project implements an L-system parser to create different patterns found in nature.&lt;/p&gt;
+&lt;p&gt;In particular, this project implemented with C++ and OpenGL, implements the following features:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Graphical modeling using L-systems&lt;/li&gt;
+&lt;li&gt;Custom constants&lt;/li&gt;
+&lt;li&gt;3D rotations&lt;/li&gt;
+&lt;li&gt;Stochastic rules&lt;/li&gt;
+&lt;li&gt;Interactive rendering&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;results&#34;&gt;Results&lt;/h2&gt;
+&lt;p&gt;Some of the examples provided with the program are these:&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://SirKoto.github.io/projects_images/l_sys/1.jpg&#34; alt=&#34;image1&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://SirKoto.github.io/projects_images/l_sys/2.jpg&#34; alt=&#34;image2&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://SirKoto.github.io/projects_images/l_sys/3.jpg&#34; alt=&#34;image3&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
 </description>
     </item>
     
@@ -245,7 +365,14 @@
       <link>https://SirKoto.github.io/project/semantic-distances/</link>
       <pubDate>Sun, 21 Jun 2020 00:00:00 +0000</pubDate>
       <guid>https://SirKoto.github.io/project/semantic-distances/</guid>
-      <description>&lt;p&gt;Content TODO&lt;/p&gt;
+      <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
+&lt;p&gt;GPU implementation to compute word similarities using the &lt;em&gt;word embedding&lt;/em&gt; model of &lt;a href=&#34;https://nlp.stanford.edu/projects/glove/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GloVe&lt;/a&gt;, which contains $2.2\cdot10^6$ words.&lt;/p&gt;
+&lt;p&gt;Given a word, the program computes the cosine distance between all other words in the database, where the cosine distance is defined as follows:&lt;/p&gt;
+&lt;p&gt;$$ cosDist(\vec A, \vec B) = \frac{\vec A \cdot \vec B}{|\vec A||\vec B|}$$&lt;/p&gt;
+&lt;p&gt;Because we are using angles to compute the similarities, we can also compute pairs of words with similar relationships. An example is if we search for &lt;em&gt;king - queen&lt;/em&gt; we get (among others) &lt;em&gt;men - women&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;As the program will compute this distance between all other words, a GPU sorting and filtering algorithm have been implemented. It can retrieve the &lt;strong&gt;N&lt;/strong&gt; words with the highest similarity.&lt;/p&gt;
+&lt;h2 id=&#34;results&#34;&gt;Results&lt;/h2&gt;
+&lt;p&gt;The final implementation, making use of warp synchronization and minimizing memory usage in the sorting, can compute the all similarities in under 10ms.&lt;/p&gt;
 </description>
     </item>
     
