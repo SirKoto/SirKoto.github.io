@@ -5,31 +5,12 @@
     <link>https://SirKoto.github.io/tag/interactive/</link>
       <atom:link href="https://SirKoto.github.io/tag/interactive/index.xml" rel="self" type="application/rss+xml" />
     <description>Interactive</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021 Pol Martín</copyright><lastBuildDate>Sun, 20 Jun 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021 Pol Martín</copyright><lastBuildDate>Mon, 01 Nov 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://SirKoto.github.io/media/icon_hu36b41f71f33cc8e1aec8948b0e13c529_2050_512x512_fill_lanczos_center_3.png</url>
       <title>Interactive</title>
       <link>https://SirKoto.github.io/tag/interactive/</link>
     </image>
-    
-    <item>
-      <title>Vulkan Game Engine</title>
-      <link>https://SirKoto.github.io/project/g-renderer/</link>
-      <pubDate>Mon, 26 Apr 2021 00:00:00 +0000</pubDate>
-      <guid>https://SirKoto.github.io/project/g-renderer/</guid>
-      <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
-&lt;p&gt;Simple Game Engine using Vulkan 1.2, implementing common Game Engine features and capabilities.&lt;/p&gt;
-&lt;p&gt;The software also implements a custom job system using system fibers, following Naughty Dog&amp;rsquo;s talk on GDC2015 &amp;ldquo;&lt;a href=&#34;https://www.gdcvault.com/play/1022186/Parallelizing-the-Naughty-Dog-Engine&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Parallelizing the Naughty Dog Engine Using Fibers&lt;/a&gt;&amp;rdquo;.&lt;/p&gt;
-&lt;p&gt;This Engine implements common characteristics as interactable GameObject oriented scenes, scene/project serialization, model instancing, and multi-threaded command buffer recording.&lt;/p&gt;
-&lt;p&gt;Some algorithms for geometry processing and time-critical rendering have also been implemented, such as:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Vertex-Clustering mesh simplification. Fast simplification using octrees, and configurable with normal clustering and different error metrics.&lt;/li&gt;
-&lt;li&gt;Automatic LOD meshes creation, which also computes multiple LODs at the same time for a performant implementation.&lt;/li&gt;
-&lt;li&gt;Critical-Rendering automatic LOD selection to achieve stable fps. The objective frame delta time is configurable.&lt;/li&gt;
-&lt;li&gt;Cell-to-Cell visibility. The Engine includes an editor to generate cells and walls; it generates a data structure that allows to precompute the visibility of the scene objects and cull non-visible objects at run-time. This uses a conservative supercover Bresenham approach.&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
     
     <item>
       <title>MPM Simulator (Bachelor thesis)</title>
@@ -124,6 +105,76 @@
 &lt;p&gt;Many more GIFs can be found in this &lt;a href=&#34;https://drive.google.com/drive/folders/1t-WDatiCCti9cPGHokXEi5BOoFrqEd-R?usp=sharing&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Google Drive Folder&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;If you want to see more results, you can watch the following video. Be sure to increase the quality to HD.&lt;/p&gt;
 &lt;iframe src=&#34;https://drive.google.com/file/d/1k0eGkb2ltT_0sRpTId-lWCAh5Sybbbti/preview&#34; width=&#34;640&#34; height=&#34;480&#34; allow=&#34;autoplay&#34;&gt;&lt;/iframe&gt;</description>
+    </item>
+    
+    <item>
+      <title>GPU Mass-Spring Simulator</title>
+      <link>https://SirKoto.github.io/project/springsimulator/</link>
+      <pubDate>Mon, 01 Nov 2021 00:00:00 +0000</pubDate>
+      <guid>https://SirKoto.github.io/project/springsimulator/</guid>
+      <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
+&lt;p&gt;Interactive particle and mass-springs simulator, entirely implemented on the GPU in compute shaders, using Verlet&amp;rsquo;s numerical method.&lt;/p&gt;
+&lt;p&gt;Collisions with spheres and triangle meshes are also resolved in the GPU.&lt;/p&gt;
+&lt;p&gt;This includes 3 different scenes, showing particle interaction, spring systems, and cloth by using springs.&lt;/p&gt;
+&lt;p&gt;The springs and cloth can be rendered using tessellation  and &lt;em&gt;B-Splines&lt;/em&gt;, which subdivides the primitives so the object looks smooth.&lt;/p&gt;
+&lt;p&gt;The following video shows a chain of springs rendered with and without tessellation.&lt;/p&gt;
+&lt;video autoplay muted loop&gt;
+  &lt;source src=&#34;https://SirKoto.github.io/projects_images/mass_spring/tess.mp4&#34; type=&#34;video/mp4&#34;&gt;
+  Your browser does not support the video tag.
+&lt;/video&gt;
+&lt;p&gt;By using &lt;strong&gt;OpenGL 4.2&lt;/strong&gt;&amp;rsquo;s Atomic Counter, this program can simulate scenes with a dynamic number of particles, specified at runtime.&lt;/p&gt;
+&lt;h2 id=&#34;scenes&#34;&gt;Scenes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Particles&lt;/strong&gt;&lt;br&gt;
+Dynamic creation and destruction of particles. Showing configurable bounciness and friction against external bodies.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;video autoplay muted loop&gt;
+  &lt;source src=&#34;https://SirKoto.github.io/projects_images/mass_spring/particles.mp4&#34; type=&#34;video/mp4&#34;&gt;
+  Your browser does not support the video tag.
+&lt;/video&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Springs&lt;/strong&gt;&lt;br&gt;
+Mass-Spring system. Chains of springs that can be initialized to look like hair. Rendering following the Kajiya-Kay model.&lt;br&gt;
+For the simulation, there are 3 compute passes:
+&lt;ul&gt;
+&lt;li&gt;Clear spring forces.&lt;/li&gt;
+&lt;li&gt;Compute forces per spring.&lt;/li&gt;
+&lt;li&gt;Each particle retrieves the forces of its connected springs, computes collisions, and advects itself.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;video autoplay muted loop&gt;
+  &lt;source src=&#34;https://SirKoto.github.io/projects_images/mass_spring/hair.mp4&#34; type=&#34;video/mp4&#34;&gt;
+  Your browser does not support the video tag.
+&lt;/video&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Cloth&lt;/strong&gt;&lt;br&gt;
+By connecting the particles with a grid of springs, we can compute cloth-like behavior.&lt;br&gt;
+It supports a simple 4-connectivity particle-spring system. And also &lt;a href=&#34;http://www.cs.cornell.edu/courses/cs667/2005sp/studentSlides/07budsberg.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Provot’s spring model&lt;/a&gt;, which can simulate stretch, shear, and bending.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;video autoplay muted loop&gt;
+  &lt;source src=&#34;https://SirKoto.github.io/projects_images/mass_spring/cloth.mp4&#34; type=&#34;video/mp4&#34;&gt;
+  Your browser does not support the video tag.
+&lt;/video&gt;</description>
+    </item>
+    
+    <item>
+      <title>Vulkan Game Engine</title>
+      <link>https://SirKoto.github.io/project/g-renderer/</link>
+      <pubDate>Mon, 26 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>https://SirKoto.github.io/project/g-renderer/</guid>
+      <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
+&lt;p&gt;Simple Game Engine using Vulkan 1.2, implementing common Game Engine features and capabilities.&lt;/p&gt;
+&lt;p&gt;The software also implements a custom job system using system fibers, following Naughty Dog&amp;rsquo;s talk on GDC2015 &amp;ldquo;&lt;a href=&#34;https://www.gdcvault.com/play/1022186/Parallelizing-the-Naughty-Dog-Engine&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Parallelizing the Naughty Dog Engine Using Fibers&lt;/a&gt;&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;This Engine implements common characteristics as interactable GameObject oriented scenes, scene/project serialization, model instancing, and multi-threaded command buffer recording.&lt;/p&gt;
+&lt;p&gt;Some algorithms for geometry processing and time-critical rendering have also been implemented, such as:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Vertex-Clustering mesh simplification. Fast simplification using octrees, and configurable with normal clustering and different error metrics.&lt;/li&gt;
+&lt;li&gt;Automatic LOD meshes creation, which also computes multiple LODs at the same time for a performant implementation.&lt;/li&gt;
+&lt;li&gt;Critical-Rendering automatic LOD selection to achieve stable fps. The objective frame delta time is configurable.&lt;/li&gt;
+&lt;li&gt;Cell-to-Cell visibility. The Engine includes an editor to generate cells and walls; it generates a data structure that allows to precompute the visibility of the scene objects and cull non-visible objects at run-time. This uses a conservative supercover Bresenham approach.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
     </item>
     
     <item>
