@@ -60,10 +60,10 @@
   
     
   
-  <meta name="description" content="GPU and CPU implementation of the Material Point Method." />
+  <meta name="description" content="Triangle mesh spectral clustering and cache-oblivious mesh layout optimization" />
 
   
-  <link rel="alternate" hreflang="en-us" href="https://SirKoto.github.io/project/mpm-simulator/" />
+  <link rel="alternate" hreflang="en-us" href="https://SirKoto.github.io/project/spectral-cluster/" />
 
   
   
@@ -279,7 +279,7 @@
   <link rel="icon" type="image/png" href="/media/icon_hu36b41f71f33cc8e1aec8948b0e13c529_2050_32x32_fill_lanczos_center_3.png" />
   <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu36b41f71f33cc8e1aec8948b0e13c529_2050_180x180_fill_lanczos_center_3.png" />
 
-  <link rel="canonical" href="https://SirKoto.github.io/project/mpm-simulator/" />
+  <link rel="canonical" href="https://SirKoto.github.io/project/spectral-cluster/" />
 
   
   
@@ -301,18 +301,18 @@
   <meta property="twitter:card" content="summary_large_image" />
   
   <meta property="og:site_name" content="Pol&#39;s porfolio" />
-  <meta property="og:url" content="https://SirKoto.github.io/project/mpm-simulator/" />
-  <meta property="og:title" content="MPM Simulator (Bachelor thesis) | Pol&#39;s porfolio" />
-  <meta property="og:description" content="GPU and CPU implementation of the Material Point Method." /><meta property="og:image" content="https://SirKoto.github.io/project/mpm-simulator/featured.PNG" />
-    <meta property="twitter:image" content="https://SirKoto.github.io/project/mpm-simulator/featured.PNG" /><meta property="og:locale" content="en-us" />
+  <meta property="og:url" content="https://SirKoto.github.io/project/spectral-cluster/" />
+  <meta property="og:title" content="Spectral Clustering | Pol&#39;s porfolio" />
+  <meta property="og:description" content="Triangle mesh spectral clustering and cache-oblivious mesh layout optimization" /><meta property="og:image" content="https://SirKoto.github.io/project/spectral-cluster/featured.PNG" />
+    <meta property="twitter:image" content="https://SirKoto.github.io/project/spectral-cluster/featured.PNG" /><meta property="og:locale" content="en-us" />
   
     
       <meta
         property="article:published_time"
-        content="2020-09-14T00:00:00&#43;00:00"
+        content="2022-01-12T00:00:00&#43;00:00"
       />
     
-    <meta property="article:modified_time" content="2020-09-14T00:00:00&#43;00:00">
+    <meta property="article:modified_time" content="2022-01-12T00:00:00&#43;00:00">
   
 
   
@@ -334,16 +334,16 @@
   "@type": "Article",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://SirKoto.github.io/project/mpm-simulator/"
+    "@id": "https://SirKoto.github.io/project/spectral-cluster/"
   },
-  "headline": "MPM Simulator (Bachelor thesis)",
+  "headline": "Spectral Clustering",
   
   "image": [
-    "https://SirKoto.github.io/project/mpm-simulator/featured.PNG"
+    "https://SirKoto.github.io/project/spectral-cluster/featured.PNG"
   ],
   
-  "datePublished": "2020-09-14T00:00:00Z",
-  "dateModified": "2020-09-14T00:00:00Z",
+  "datePublished": "2022-01-12T00:00:00Z",
+  "dateModified": "2022-01-12T00:00:00Z",
   
   "author": {
     "@type": "Person",
@@ -358,7 +358,7 @@
       "url": "https://SirKoto.github.io/media/icon_hu36b41f71f33cc8e1aec8948b0e13c529_2050_192x192_fill_lanczos_center_3.png"
     }
   },
-  "description": "GPU and CPU implementation of the Material Point Method."
+  "description": "Triangle mesh spectral clustering and cache-oblivious mesh layout optimization"
 }
 </script>
 
@@ -374,11 +374,11 @@
 
 
 
-  <title>MPM Simulator (Bachelor thesis) | Pol&#39;s porfolio</title>
+  <title>Spectral Clustering | Pol&#39;s porfolio</title>
 </head>
 
 
-<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="0d3e94721a89a79404dcf92dbc718f58" >
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="279d2815aeaec8272d01beae03038a43" >
 
   
   
@@ -708,26 +708,18 @@
 
 
 
-
-
-
-
-
-
-
+  
 
   
+  
+  
+<div class="article-container pt-3">
+  <h1>Spectral Clustering</h1>
+
+  
+
   
     
-  
-
-
-<div class="article-container pt-3">
-  <h1>MPM Simulator (Bachelor thesis)</h1>
-
-  
-
-  
 
 
 <div class="article-metadata">
@@ -741,7 +733,7 @@
     
       
     
-    Sep 14, 2020
+    Jan 12, 2022
   </span>
   
 
@@ -761,7 +753,7 @@
 
 </div>
 
-  
+    
 
 
 
@@ -807,21 +799,14 @@
   
     
   
-  <a class="btn btn-outline-primary btn-page-header" href="https://github.com/SirKoto/MPMSimulator" target="_blank" rel="noopener">
+  <a class="btn btn-outline-primary btn-page-header" href="https://github.com/SirKoto/mesh_layout_optimization" target="_blank" rel="noopener">
     <i class="fab fa-github mr-1"></i>Source</a>
 
 
 </div>
 
 
-</div>
-
-
-<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 720px; max-height: 477px;">
-  <div style="position: relative">
-    <img src="/project/mpm-simulator/featured_hudd197b0883471aecf4028a568ec2a37f_2549600_720x0_resize_lanczos_3.PNG" width="720" height="477" alt="" class="featured-image">
-    
-  </div>
+  
 </div>
 
 
@@ -830,93 +815,29 @@
 
     <div class="article-style">
       <h2 id="summary">Summary</h2>
-<p>Bachelor thesis on simulating arbitrary deformable materials, following the Material Point Method, in its Moving Least Squares version (<a href="https://github.com/yuanming-hu/taichi_mpm" target="_blank" rel="noopener">Yuanming et al.</a>).</p>
-<p>Wrote an introductory document to MPM, from the point of view of an Informatic Engineer student. The publication can be found <a href="/publication/mpm-thesis/">here</a>.</p>
-<p>A versatile implementation was also developed, with its CPU and GPU versions, able to create arbitrary scenes with custom parameters.</p>
-<h2 id="awards">Awards</h2>
-<ul>
-<li>Decorated with the best informatics engineering bachelor final thesis of the promotion 2019-2020 of the Faculty of Informatics of Barcelona. By <a href="https://www.fibalumni.net/" target="_blank" rel="noopener">FIB-Alumni</a>.</li>
-<li>Granted with the best bachelor final thesis in Spain related to Computer Graphics of the promotions 2019-2021. By the <a href="https://www.virvig.eu/ceig2021/" target="_blank" rel="noopener">Spanish congress of Computer Graphics</a>.</li>
-</ul>
-<h2 id="results">Results</h2>
-<p>Some GIFs of the obtained results can be seen here:</p>
-<ul>
-<li>
-<p>A comparison of different stiffness materials, with some hardening:
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<figure  >
-  <div class="d-flex justify-content-center">
-    <div class="w-100" ><img src="https://github.com/SirKoto/MPMSimulator/blob/master/images/cmp4.gif?raw=true" alt="Falldown GIF" loading="lazy" data-zoomable /></div>
-  </div></figure>
-</p>
+<p>Multilevel clustering of vertices of a triangle mesh using Spectral partitioning.</p>
+<p>The first step is to apply vertex clustering using an octree, followed by spectral partitioning with the Fiedler Vector, until a certain depth is reached.</p>
+<table><tr>
+<th>Vertex Clustering</th><th>Vertex + Spectral Clustering</th>
+</tr>
+<tr>
+<td> <img src="/projects_images/spectral/octree.PNG" alt="Vertex Clustering" style="width: 350px;"/> </td>
+<td> <img src="featured.PNG" alt="Vertex+Spectral Clustering" style="width: 350px;"/> </td>
+</tr></table>
+<p>The Fiedler Vector expresses the algebraic connectivity of a graph. A partition of the vertices is given by the sign of the components of the Fiedler Vector. Given the Laplacian matrix $\mathcal{L}$ of a mesh, the Fiedler vector is the eigenvector with the second-smallest eigenvalue.</p>
+<p>The multilevel implementation is required because computing the Fiedler Vector of huge matrices is prohibitive, and vertex clustering is a good and fast approach to reduce the complexity.</p>
+<p>One must note that vertex clustering may produce disconnect clusters, which spectral clustering does not like as input. A Union-Find algorithm has been implemented to separate the connected clusters and classify them separately.</p>
+<p>The program also supports computing an optimized cache-oblivious mesh layout, following Yoon et al.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>, which optimizes each of the clusters' vertices and sorts the faces of the mesh. It is important to note that it has $O(n!)$ complexity, where $n$ is the size of the clusters.</p>
+<p>The implementation is written in C++, using <a href="https://eigen.tuxfamily.org" target="_blank" rel="noopener">Eigen</a> and <a href="https://spectralib.org/" target="_blank" rel="noopener">Spectra</a> for the sparse support and computation of eigenvectors.</p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>Yoon, S. E., Lindstrom, P., Pascucci, V., &amp; Manocha, D. (2005). <em>Cache-oblivious mesh layouts</em>. In ACM SIGGRAPH 2005 Papers (pp. 886-893).&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li>
-<p>Preserve all deformation as elastic:
+</ol>
+</section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<figure  >
-  <div class="d-flex justify-content-center">
-    <div class="w-100" ><img src="https://github.com/SirKoto/MPMSimulator/blob/master/images/superDeffCor.gif?raw=true" alt="Great Deformation Gif" loading="lazy" data-zoomable /></div>
-  </div></figure>
-</p>
-</li>
-<li>
-<p>Huge plastic deformations allow to simulate fluids:
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<figure  >
-  <div class="d-flex justify-content-center">
-    <div class="w-100" ><img src="https://github.com/SirKoto/MPMSimulator/blob/master/images/snow2.gif?raw=true" alt="Snow Gif" loading="lazy" data-zoomable /></div>
-  </div></figure>
-</p>
-</li>
-</ul>
-<p>Many more GIFs can be found in this <a href="https://drive.google.com/drive/folders/1t-WDatiCCti9cPGHokXEi5BOoFrqEd-R?usp=sharing" target="_blank" rel="noopener">Google Drive Folder</a></p>
-<p>If you want to see more results, you can watch the following video. Be sure to increase the quality to HD.</p>
-<iframe src="https://drive.google.com/file/d/1k0eGkb2ltT_0sRpTId-lWCAh5Sybbbti/preview" width="640" height="480" allow="autoplay"></iframe>
     </div>
 
     
@@ -928,13 +849,9 @@
 
 <div class="article-tags">
   
-  <a class="badge badge-light" href="/tag/opengl/">OpenGL</a>
+  <a class="badge badge-light" href="/tag/geometry-processing/">Geometry processing</a>
   
-  <a class="badge badge-light" href="/tag/simulation/">Simulation</a>
-  
-  <a class="badge badge-light" href="/tag/interactive/">Interactive</a>
-  
-  <a class="badge badge-light" href="/tag/animation/">Animation</a>
+  <a class="badge badge-light" href="/tag/vertex-clustering/">Vertex clustering</a>
   
 </div>
 
@@ -1030,23 +947,6 @@
 
   
   
-  <div class="article-widget content-widget-hr">
-    <h3>Related</h3>
-    <ul>
-      
-      <li><a href="/project/springsimulator/">GPU Mass-Spring Simulator</a></li>
-      
-      <li><a href="/project/l-systems/">L-Systems</a></li>
-      
-      <li><a href="/project/visibility-comparison/">GPU Visibility algorithms comparison</a></li>
-      
-      <li><a href="/project/g-renderer/">Vulkan Game Engine</a></li>
-      
-      <li><a href="/publication/mpm-thesis/">Material Point Method (MPM) application to object deformation - Bachelor Thesis</a></li>
-      
-    </ul>
-  </div>
-  
 
 
 
@@ -1063,242 +963,9 @@
       
       
       
-        <h2>Publications</h2>
-        
-          
-            
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-  
-
-
-<div class="media stream-item">
-  <div class="media-body">
-
-    <div class="section-subheading article-title mb-0 mt-0">
-      <a href="/publication/mpm-thesis/" >Material Point Method (MPM) application to object deformation - Bachelor Thesis</a>
-    </div>
-
-    
-    <a href="/publication/mpm-thesis/"  class="summary-link">
-      <div class="article-style">
-        <p>One of the most important branches of computer animation is the physic simulation of the behaviour of objects in a scene. In this …</p>
-      </div>
-    </a>
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
-      
-      <div>
-        
-
-  <span class="author-highlighted">
-      Pol Martín Garcia</span>, <span >
-      Toni Susin Sanchez</span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="Advisor"></i>
-      </div>
-      
-    </div>
-
-    
-    <div class="btn-links">
-      
-
-
-
-
-
-
-
-
-  
-    
-  
-
-
-
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://upcommons.upc.edu/handle/2117/190540" target="_blank" rel="noopener">
-  PDF
-</a>
-
-
-
-
-
-
-
-  
-  <a class="btn btn-outline-primary btn-page-header btn-sm" href="/project/mpm-simulator/">
-    Project
-  </a>
-  
-
-
-
-
-
-
-
-
-
-
-
-    </div>
-    
-
-  </div>
-  <div class="ml-3">
-    
-    
-  </div>
-</div>
-
-          
-        
-      
 
       
       
-      
-        <h2>Events</h2>
-        
-          
-            
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-  
-
-
-<div class="media stream-item">
-  <div class="media-body">
-
-    <div class="section-subheading article-title mb-0 mt-0">
-      <a href="/talk/mpm-simulation-from-the-point-of-view-of-a-student-short-paper/" >MPM Simulation from the point of view of a Student - Short Paper</a>
-    </div>
-
-    
-    <a href="/talk/mpm-simulation-from-the-point-of-view-of-a-student-short-paper/"  class="summary-link">
-      <div class="article-style">
-        Presentation of winning bachelor thesis. Complexity evaluation and description of the thesis.
-      </div>
-    </a>
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-      <div>
-        <span>
-          Sep 22, 2021 4:30 PM
-        </span>
-        
-        <span class="middot-divider"></span>
-        <span>Malaga</span>
-        
-      </div>
-      
-
-      
-      <div>
-        
-
-  <span class="author-highlighted">
-      Pol Martín Garcia</span>, <span >
-      Toni Susin Sanchez</span>
-      </div>
-      
-    </div>
-
-    
-    <div class="btn-links">
-      
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-  
-  <a class="btn btn-outline-primary btn-page-header btn-sm" href="/project/mpm-simulator/">
-    Project
-  </a>
-  
-
-
-
-
-
-
-
-  
-  
-    
-  
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://youtu.be/1_NWm0ayfQI" target="_blank" rel="noopener">
-  Video
-</a>
-
-
-
-
-
-    </div>
-    
-
-  </div>
-  <div class="ml-3">
-    
-    
-    
-    <a href="/talk/mpm-simulation-from-the-point-of-view-of-a-student-short-paper/" >
-      <img src="/talk/mpm-simulation-from-the-point-of-view-of-a-student-short-paper/featured_hu34547ad589b70f252a69f0fa6f0244d2_83344_150x0_resize_lanczos_3.PNG" alt="MPM Simulation from the point of view of a Student - Short Paper" loading="lazy">
-    </a>
-    
-  </div>
-</div>
-
-          
-        
       
     </div>
   </div>

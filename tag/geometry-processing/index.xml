@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Geometry processing | Pol&#39;s porfolio</title>
+    <link>https://SirKoto.github.io/tag/geometry-processing/</link>
+      <atom:link href="https://SirKoto.github.io/tag/geometry-processing/index.xml" rel="self" type="application/rss+xml" />
+    <description>Geometry processing</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2022 Pol Martín</copyright><lastBuildDate>Wed, 12 Jan 2022 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://SirKoto.github.io/media/icon_hu36b41f71f33cc8e1aec8948b0e13c529_2050_512x512_fill_lanczos_center_3.png</url>
+      <title>Geometry processing</title>
+      <link>https://SirKoto.github.io/tag/geometry-processing/</link>
+    </image>
+    
+    <item>
+      <title>Spectral Clustering</title>
+      <link>https://SirKoto.github.io/project/spectral-cluster/</link>
+      <pubDate>Wed, 12 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://SirKoto.github.io/project/spectral-cluster/</guid>
+      <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
+&lt;p&gt;Multilevel clustering of vertices of a triangle mesh using Spectral partitioning.&lt;/p&gt;
+&lt;p&gt;The first step is to apply vertex clustering using an octree, followed by spectral partitioning with the Fiedler Vector, until a certain depth is reached.&lt;/p&gt;
+&lt;table&gt;&lt;tr&gt;
+&lt;th&gt;Vertex Clustering&lt;/th&gt;&lt;th&gt;Vertex + Spectral Clustering&lt;/th&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt; &lt;img src=&#34;https://SirKoto.github.io/projects_images/spectral/octree.PNG&#34; alt=&#34;Vertex Clustering&#34; style=&#34;width: 350px;&#34;/&gt; &lt;/td&gt;
+&lt;td&gt; &lt;img src=&#34;featured.PNG&#34; alt=&#34;Vertex+Spectral Clustering&#34; style=&#34;width: 350px;&#34;/&gt; &lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+&lt;p&gt;The Fiedler Vector expresses the algebraic connectivity of a graph. A partition of the vertices is given by the sign of the components of the Fiedler Vector. Given the Laplacian matrix $\mathcal{L}$ of a mesh, the Fiedler vector is the eigenvector with the second-smallest eigenvalue.&lt;/p&gt;
+&lt;p&gt;The multilevel implementation is required because computing the Fiedler Vector of huge matrices is prohibitive, and vertex clustering is a good and fast approach to reduce the complexity.&lt;/p&gt;
+&lt;p&gt;One must note that vertex clustering may produce disconnect clusters, which spectral clustering does not like as input. A Union-Find algorithm has been implemented to separate the connected clusters and classify them separately.&lt;/p&gt;
+&lt;p&gt;The program also supports computing an optimized cache-oblivious mesh layout, following Yoon et al.&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;, which optimizes each of the clusters&#39; vertices and sorts the faces of the mesh. It is important to note that it has $O(n!)$ complexity, where $n$ is the size of the clusters.&lt;/p&gt;
+&lt;p&gt;The implementation is written in C++, using &lt;a href=&#34;https://eigen.tuxfamily.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Eigen&lt;/a&gt; and &lt;a href=&#34;https://spectralib.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Spectra&lt;/a&gt; for the sparse support and computation of eigenvectors.&lt;/p&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Yoon, S. E., Lindstrom, P., Pascucci, V., &amp;amp; Manocha, D. (2005). &lt;em&gt;Cache-oblivious mesh layouts&lt;/em&gt;. In ACM SIGGRAPH 2005 Papers (pp. 886-893).&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

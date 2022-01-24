@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Animation | Pol&#39;s porfolio</title>
+    <link>https://SirKoto.github.io/tag/animation/</link>
+      <atom:link href="https://SirKoto.github.io/tag/animation/index.xml" rel="self" type="application/rss+xml" />
+    <description>Animation</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2022 Pol Martín</copyright><lastBuildDate>Mon, 01 Nov 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://SirKoto.github.io/media/icon_hu36b41f71f33cc8e1aec8948b0e13c529_2050_512x512_fill_lanczos_center_3.png</url>
+      <title>Animation</title>
+      <link>https://SirKoto.github.io/tag/animation/</link>
+    </image>
+    
+    <item>
+      <title>MPM Simulator (Bachelor thesis)</title>
+      <link>https://SirKoto.github.io/project/mpm-simulator/</link>
+      <pubDate>Mon, 14 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>https://SirKoto.github.io/project/mpm-simulator/</guid>
+      <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
+&lt;p&gt;Bachelor thesis on simulating arbitrary deformable materials, following the Material Point Method, in its Moving Least Squares version (&lt;a href=&#34;https://github.com/yuanming-hu/taichi_mpm&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Yuanming et al.&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;Wrote an introductory document to MPM, from the point of view of an Informatic Engineer student. The publication can be found &lt;a href=&#34;https://SirKoto.github.io/publication/mpm-thesis/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;A versatile implementation was also developed, with its CPU and GPU versions, able to create arbitrary scenes with custom parameters.&lt;/p&gt;
+&lt;h2 id=&#34;awards&#34;&gt;Awards&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Decorated with the best informatics engineering bachelor final thesis of the promotion 2019-2020 of the Faculty of Informatics of Barcelona. By &lt;a href=&#34;https://www.fibalumni.net/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;FIB-Alumni&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Granted with the best bachelor final thesis in Spain related to Computer Graphics of the promotions 2019-2021. By the &lt;a href=&#34;https://www.virvig.eu/ceig2021/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Spanish congress of Computer Graphics&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;results&#34;&gt;Results&lt;/h2&gt;
+&lt;p&gt;Some GIFs of the obtained results can be seen here:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;A comparison of different stiffness materials, with some hardening:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://github.com/SirKoto/MPMSimulator/blob/master/images/cmp4.gif?raw=true&#34; alt=&#34;Falldown GIF&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Preserve all deformation as elastic:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://github.com/SirKoto/MPMSimulator/blob/master/images/superDeffCor.gif?raw=true&#34; alt=&#34;Great Deformation Gif&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Huge plastic deformations allow to simulate fluids:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://github.com/SirKoto/MPMSimulator/blob/master/images/snow2.gif?raw=true&#34; alt=&#34;Snow Gif&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Many more GIFs can be found in this &lt;a href=&#34;https://drive.google.com/drive/folders/1t-WDatiCCti9cPGHokXEi5BOoFrqEd-R?usp=sharing&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Google Drive Folder&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;If you want to see more results, you can watch the following video. Be sure to increase the quality to HD.&lt;/p&gt;
+&lt;iframe src=&#34;https://drive.google.com/file/d/1k0eGkb2ltT_0sRpTId-lWCAh5Sybbbti/preview&#34; width=&#34;640&#34; height=&#34;480&#34; allow=&#34;autoplay&#34;&gt;&lt;/iframe&gt;</description>
+    </item>
+    
+    <item>
+      <title>GPU Mass-Spring Simulator</title>
+      <link>https://SirKoto.github.io/project/springsimulator/</link>
+      <pubDate>Mon, 01 Nov 2021 00:00:00 +0000</pubDate>
+      <guid>https://SirKoto.github.io/project/springsimulator/</guid>
+      <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
+&lt;p&gt;Interactive particle and mass-springs simulator, entirely implemented on the GPU in compute shaders, using Verlet&amp;rsquo;s numerical method.&lt;/p&gt;
+&lt;p&gt;Collisions with spheres and triangle meshes are also resolved in the GPU.&lt;/p&gt;
+&lt;p&gt;This includes 3 different scenes, showing particle interaction, spring systems, and cloth by using springs.&lt;/p&gt;
+&lt;p&gt;The springs and cloth can be rendered using tessellation  and &lt;em&gt;B-Splines&lt;/em&gt;, which subdivides the primitives so the object looks smooth.&lt;/p&gt;
+&lt;p&gt;The following video shows a chain of springs rendered with and without tessellation.&lt;/p&gt;
+&lt;video autoplay muted loop&gt;
+  &lt;source src=&#34;https://SirKoto.github.io/projects_images/mass_spring/tess.mp4&#34; type=&#34;video/mp4&#34;&gt;
+  Your browser does not support the video tag.
+&lt;/video&gt;
+&lt;p&gt;By using &lt;strong&gt;OpenGL 4.2&lt;/strong&gt;&amp;rsquo;s Atomic Counter, this program can simulate scenes with a dynamic number of particles, specified at runtime.&lt;/p&gt;
+&lt;h2 id=&#34;scenes&#34;&gt;Scenes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Particles&lt;/strong&gt;&lt;br&gt;
+Dynamic creation and destruction of particles. Showing configurable bounciness and friction against external bodies.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;video autoplay muted loop&gt;
+  &lt;source src=&#34;https://SirKoto.github.io/projects_images/mass_spring/particles.mp4&#34; type=&#34;video/mp4&#34;&gt;
+  Your browser does not support the video tag.
+&lt;/video&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Springs&lt;/strong&gt;&lt;br&gt;
+Mass-Spring system. Chains of springs that can be initialized to look like hair. Rendering following the Kajiya-Kay model.&lt;br&gt;
+For the simulation, there are 3 compute passes:
+&lt;ul&gt;
+&lt;li&gt;Clear spring forces.&lt;/li&gt;
+&lt;li&gt;Compute forces per spring.&lt;/li&gt;
+&lt;li&gt;Each particle retrieves the forces of its connected springs, computes collisions, and advects itself.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;video autoplay muted loop&gt;
+  &lt;source src=&#34;https://SirKoto.github.io/projects_images/mass_spring/hair.mp4&#34; type=&#34;video/mp4&#34;&gt;
+  Your browser does not support the video tag.
+&lt;/video&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Cloth&lt;/strong&gt;&lt;br&gt;
+By connecting the particles with a grid of springs, we can compute cloth-like behavior.&lt;br&gt;
+It supports a simple 4-connectivity particle-spring system. And also &lt;a href=&#34;http://www.cs.cornell.edu/courses/cs667/2005sp/studentSlides/07budsberg.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Provot’s spring model&lt;/a&gt;, which can simulate stretch, shear, and bending.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;video autoplay muted loop&gt;
+  &lt;source src=&#34;https://SirKoto.github.io/projects_images/mass_spring/cloth.mp4&#34; type=&#34;video/mp4&#34;&gt;
+  Your browser does not support the video tag.
+&lt;/video&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
