@@ -5,7 +5,8 @@
     <link>https://SirKoto.github.io/project/</link>
       <atom:link href="https://SirKoto.github.io/project/index.xml" rel="self" type="application/rss+xml" />
     <description>Projects</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2022 Pol Martín</copyright><lastBuildDate>Wed, 12 Jan 2022 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2022 Pol Martín
+I did this with [Hugo](https://gohugo.io/) and [Academic](https://github.com/wowchemy/starter-hugo-academic)</copyright><lastBuildDate>Mon, 27 Jun 2022 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://SirKoto.github.io/media/icon_hu36b41f71f33cc8e1aec8948b0e13c529_2050_512x512_fill_lanczos_center_3.png</url>
       <title>Projects</title>
@@ -13,12 +14,35 @@
     </image>
     
     <item>
-      <title>MPM Simulator (Bachelor thesis)</title>
+      <title>Fast 3D Deformations using FEM (Master&#39;s thesis)</title>
+      <link>https://SirKoto.github.io/project/tissuefem/</link>
+      <pubDate>Mon, 27 Jun 2022 00:00:00 +0000</pubDate>
+      <guid>https://SirKoto.github.io/project/tissuefem/</guid>
+      <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
+&lt;p&gt;Master&amp;rsquo;s thesis on developing a real-time interactive simulator of deformable objects, using state-of-the-art techniques used by Pixar and Disney.&lt;/p&gt;
+&lt;p&gt;The thesis introduces the topic of simulation of volumetric models from the basics, which can be found in &lt;strong&gt;TBP&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Simulator implemented following Kim and Eberle&amp;rsquo;s course &lt;a href=&#34;http://www.tkim.graphics/DYNAMIC_DEFORMABLES/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Dynamic Deformables&lt;/a&gt;, and implementing Smith et al. &lt;a href=&#34;https://dl.acm.org/doi/10.1145/3180491&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Stable Neo-Hookean&lt;/a&gt; energy (among others).&lt;/p&gt;
+&lt;p&gt;Highly optimized implementation using &lt;a href=&#34;https://eigen.tuxfamily.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Eigen&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;results&#34;&gt;Results&lt;/h2&gt;
+&lt;p&gt;The simulation allows user interaction with specific groups of vertices.&lt;/p&gt;
+&lt;video autoplay muted loop&gt;
+  &lt;source src=&#34;https://SirKoto.github.io/projects_images/tissue_fem/Armadillostretch.mp4&#34; type=&#34;video/mp4&#34;&gt;
+  Your browser does not support the video tag.
+&lt;/video&gt;
+&lt;p&gt;Collision detection and interaction with colliders are also incorporated into the simulator.&lt;/p&gt;
+&lt;video autoplay muted loop&gt;
+  &lt;source src=&#34;https://SirKoto.github.io/projects_images/tissue_fem/Rollingsquishableballs.mp4&#34; type=&#34;video/mp4&#34;&gt;
+  Your browser does not support the video tag.
+&lt;/video&gt;</description>
+    </item>
+    
+    <item>
+      <title>MPM Simulator (Bachelor&#39;s thesis)</title>
       <link>https://SirKoto.github.io/project/mpm-simulator/</link>
       <pubDate>Mon, 14 Sep 2020 00:00:00 +0000</pubDate>
       <guid>https://SirKoto.github.io/project/mpm-simulator/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
-&lt;p&gt;Bachelor thesis on simulating arbitrary deformable materials, following the Material Point Method, in its Moving Least Squares version (&lt;a href=&#34;https://github.com/yuanming-hu/taichi_mpm&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Yuanming et al.&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;Bachelor&amp;rsquo;s thesis on simulating arbitrary deformable materials, following the Material Point Method, in its Moving Least Squares version (&lt;a href=&#34;https://github.com/yuanming-hu/taichi_mpm&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Yuanming et al.&lt;/a&gt;).&lt;/p&gt;
 &lt;p&gt;Wrote an introductory document to MPM, from the point of view of an Informatic Engineer student. The publication can be found &lt;a href=&#34;https://SirKoto.github.io/publication/mpm-thesis/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;A versatile implementation was also developed, with its CPU and GPU versions, able to create arbitrary scenes with custom parameters.&lt;/p&gt;
 &lt;h2 id=&#34;awards&#34;&gt;Awards&lt;/h2&gt;

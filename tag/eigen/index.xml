@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Eigen | Pol&#39;s portfolio</title>
+    <link>https://SirKoto.github.io/tag/eigen/</link>
+      <atom:link href="https://SirKoto.github.io/tag/eigen/index.xml" rel="self" type="application/rss+xml" />
+    <description>Eigen</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2022 Pol Martín
+I did this with [Hugo](https://gohugo.io/) and [Academic](https://github.com/wowchemy/starter-hugo-academic)</copyright><lastBuildDate>Wed, 06 Jul 2022 17:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://SirKoto.github.io/media/icon_hu36b41f71f33cc8e1aec8948b0e13c529_2050_512x512_fill_lanczos_center_3.png</url>
+      <title>Eigen</title>
+      <link>https://SirKoto.github.io/tag/eigen/</link>
+    </image>
+    
+    <item>
+      <title>Interactive FEM CPU deformable simulation: What you should (and shouldn’t) use with Eigen</title>
+      <link>https://SirKoto.github.io/talk/interactive-fem-cpu-deformable-simulation-what-you-should-and-shouldnt-use-with-eigen/</link>
+      <pubDate>Wed, 06 Jul 2022 17:00:00 +0000</pubDate>
+      <guid>https://SirKoto.github.io/talk/interactive-fem-cpu-deformable-simulation-what-you-should-and-shouldnt-use-with-eigen/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

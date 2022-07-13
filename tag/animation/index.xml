@@ -5,7 +5,8 @@
     <link>https://SirKoto.github.io/tag/animation/</link>
       <atom:link href="https://SirKoto.github.io/tag/animation/index.xml" rel="self" type="application/rss+xml" />
     <description>Animation</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2022 Pol Martín</copyright><lastBuildDate>Mon, 01 Nov 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2022 Pol Martín
+I did this with [Hugo](https://gohugo.io/) and [Academic](https://github.com/wowchemy/starter-hugo-academic)</copyright><lastBuildDate>Mon, 01 Nov 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://SirKoto.github.io/media/icon_hu36b41f71f33cc8e1aec8948b0e13c529_2050_512x512_fill_lanczos_center_3.png</url>
       <title>Animation</title>
@@ -13,12 +14,12 @@
     </image>
     
     <item>
-      <title>MPM Simulator (Bachelor thesis)</title>
+      <title>MPM Simulator (Bachelor&#39;s thesis)</title>
       <link>https://SirKoto.github.io/project/mpm-simulator/</link>
       <pubDate>Mon, 14 Sep 2020 00:00:00 +0000</pubDate>
       <guid>https://SirKoto.github.io/project/mpm-simulator/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
-&lt;p&gt;Bachelor thesis on simulating arbitrary deformable materials, following the Material Point Method, in its Moving Least Squares version (&lt;a href=&#34;https://github.com/yuanming-hu/taichi_mpm&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Yuanming et al.&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;Bachelor&amp;rsquo;s thesis on simulating arbitrary deformable materials, following the Material Point Method, in its Moving Least Squares version (&lt;a href=&#34;https://github.com/yuanming-hu/taichi_mpm&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Yuanming et al.&lt;/a&gt;).&lt;/p&gt;
 &lt;p&gt;Wrote an introductory document to MPM, from the point of view of an Informatic Engineer student. The publication can be found &lt;a href=&#34;https://SirKoto.github.io/publication/mpm-thesis/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;A versatile implementation was also developed, with its CPU and GPU versions, able to create arbitrary scenes with custom parameters.&lt;/p&gt;
 &lt;h2 id=&#34;awards&#34;&gt;Awards&lt;/h2&gt;
