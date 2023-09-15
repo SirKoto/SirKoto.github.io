@@ -5,7 +5,7 @@
     <link>https://SirKoto.github.io/tag/animation/</link>
       <atom:link href="https://SirKoto.github.io/tag/animation/index.xml" rel="self" type="application/rss+xml" />
     <description>Animation</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2022 Pol Martín
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2023 Pol Martín
 I did this with [Hugo](https://gohugo.io/) and [Academic](https://github.com/wowchemy/starter-hugo-academic)</copyright><lastBuildDate>Mon, 01 Nov 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://SirKoto.github.io/media/icon_hu36b41f71f33cc8e1aec8948b0e13c529_2050_512x512_fill_lanczos_center_3.png</url>
@@ -134,7 +134,7 @@ Dynamic creation and destruction of particles. Showing configurable bounciness a
   Your browser does not support the video tag.
 &lt;/video&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Springs&lt;/strong&gt;&lt;br&gt;
+&lt;li&gt;&lt;strong&gt;Springs&lt;/strong&gt; &lt;br&gt;
 Mass-Spring system. Chains of springs that can be initialized to look like hair. Rendering following the Kajiya-Kay model.&lt;br&gt;
 For the simulation, there are 3 compute passes:
 &lt;ul&gt;
@@ -149,7 +149,7 @@ For the simulation, there are 3 compute passes:
   Your browser does not support the video tag.
 &lt;/video&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Cloth&lt;/strong&gt;&lt;br&gt;
+&lt;li&gt;&lt;strong&gt;Cloth&lt;/strong&gt; &lt;br&gt;
 By connecting the particles with a grid of springs, we can compute cloth-like behavior.&lt;br&gt;
 It supports a simple 4-connectivity particle-spring system. And also &lt;a href=&#34;http://www.cs.cornell.edu/courses/cs667/2005sp/studentSlides/07budsberg.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Provot’s spring model&lt;/a&gt;, which can simulate stretch, shear, and bending.&lt;/li&gt;
 &lt;/ul&gt;

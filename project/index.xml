@@ -5,7 +5,7 @@
     <link>https://SirKoto.github.io/project/</link>
       <atom:link href="https://SirKoto.github.io/project/index.xml" rel="self" type="application/rss+xml" />
     <description>Projects</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2022 Pol Martín
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2023 Pol Martín
 I did this with [Hugo](https://gohugo.io/) and [Academic](https://github.com/wowchemy/starter-hugo-academic)</copyright><lastBuildDate>Mon, 27 Jun 2022 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://SirKoto.github.io/media/icon_hu36b41f71f33cc8e1aec8948b0e13c529_2050_512x512_fill_lanczos_center_3.png</url>
@@ -157,7 +157,7 @@ Dynamic creation and destruction of particles. Showing configurable bounciness a
   Your browser does not support the video tag.
 &lt;/video&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Springs&lt;/strong&gt;&lt;br&gt;
+&lt;li&gt;&lt;strong&gt;Springs&lt;/strong&gt; &lt;br&gt;
 Mass-Spring system. Chains of springs that can be initialized to look like hair. Rendering following the Kajiya-Kay model.&lt;br&gt;
 For the simulation, there are 3 compute passes:
 &lt;ul&gt;
@@ -172,7 +172,7 @@ For the simulation, there are 3 compute passes:
   Your browser does not support the video tag.
 &lt;/video&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Cloth&lt;/strong&gt;&lt;br&gt;
+&lt;li&gt;&lt;strong&gt;Cloth&lt;/strong&gt; &lt;br&gt;
 By connecting the particles with a grid of springs, we can compute cloth-like behavior.&lt;br&gt;
 It supports a simple 4-connectivity particle-spring system. And also &lt;a href=&#34;http://www.cs.cornell.edu/courses/cs667/2005sp/studentSlides/07budsberg.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Provot’s spring model&lt;/a&gt;, which can simulate stretch, shear, and bending.&lt;/li&gt;
 &lt;/ul&gt;
@@ -200,16 +200,16 @@ It supports a simple 4-connectivity particle-spring system. And also &lt;a href=
 &lt;p&gt;The Fiedler Vector expresses the algebraic connectivity of a graph. A partition of the vertices is given by the sign of the components of the Fiedler Vector. Given the Laplacian matrix $\mathcal{L}$ of a mesh, the Fiedler vector is the eigenvector with the second-smallest eigenvalue.&lt;/p&gt;
 &lt;p&gt;The multilevel implementation is required because computing the Fiedler Vector of huge matrices is prohibitive, and vertex clustering is a good and fast approach to reduce the complexity.&lt;/p&gt;
 &lt;p&gt;One must note that vertex clustering may produce disconnect clusters, which spectral clustering does not like as input. A Union-Find algorithm has been implemented to separate the connected clusters and classify them separately.&lt;/p&gt;
-&lt;p&gt;The program also supports computing an optimized cache-oblivious mesh layout, following Yoon et al.&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;, which optimizes each of the clusters&#39; vertices and sorts the faces of the mesh. It is important to note that it has $O(n!)$ complexity, where $n$ is the size of the clusters.&lt;/p&gt;
+&lt;p&gt;The program also supports computing an optimized cache-oblivious mesh layout, following Yoon et al.&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;, which optimizes each of the clusters&amp;rsquo; vertices and sorts the faces of the mesh. It is important to note that it has $O(n!)$ complexity, where $n$ is the size of the clusters.&lt;/p&gt;
 &lt;p&gt;The implementation is written in C++, using &lt;a href=&#34;https://eigen.tuxfamily.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Eigen&lt;/a&gt; and &lt;a href=&#34;https://spectralib.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Spectra&lt;/a&gt; for the sparse support and computation of eigenvectors.&lt;/p&gt;
-&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
-&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
 &lt;p&gt;Yoon, S. E., Lindstrom, P., Pascucci, V., &amp;amp; Manocha, D. (2005). &lt;em&gt;Cache-oblivious mesh layouts&lt;/em&gt;. In ACM SIGGRAPH 2005 Papers (pp. 886-893).&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/section&gt;
+&lt;/div&gt;
 </description>
     </item>
     
