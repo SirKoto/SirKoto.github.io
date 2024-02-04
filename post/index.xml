@@ -5,7 +5,7 @@
     <link>https://SirKoto.github.io/post/</link>
       <atom:link href="https://SirKoto.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Posts</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2023 Pol Martín
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2024 Pol Martín
 I did this with [Hugo](https://gohugo.io/) and [Academic](https://github.com/wowchemy/starter-hugo-academic)</copyright><lastBuildDate>Sun, 13 Dec 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://SirKoto.github.io/media/icon_hu36b41f71f33cc8e1aec8948b0e13c529_2050_512x512_fill_lanczos_center_3.png</url>
@@ -197,7 +197,7 @@ data.head()
 
 
 
-&lt;div id=&#34;chart-376142895&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-284561379&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   (function() {
     let a = setInterval( function() {
@@ -207,7 +207,7 @@ data.head()
       clearInterval( a );
 
       Plotly.d3.json(&#34;./line-chart.json&#34;, function(chart) {
-        Plotly.plot(&#39;chart-376142895&#39;, chart.data, chart.layout, {responsive: true});
+        Plotly.plot(&#39;chart-284561379&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();

@@ -5,13 +5,21 @@
     <link>https://SirKoto.github.io/publication-type/7/</link>
       <atom:link href="https://SirKoto.github.io/publication-type/7/index.xml" rel="self" type="application/rss+xml" />
     <description>7</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2023 Pol Martín
-I did this with [Hugo](https://gohugo.io/) and [Academic](https://github.com/wowchemy/starter-hugo-academic)</copyright><lastBuildDate>Thu, 23 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2024 Pol Martín
+I did this with [Hugo](https://gohugo.io/) and [Academic](https://github.com/wowchemy/starter-hugo-academic)</copyright><lastBuildDate>Tue, 28 Jun 2022 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://SirKoto.github.io/media/icon_hu36b41f71f33cc8e1aec8948b0e13c529_2050_512x512_fill_lanczos_center_3.png</url>
       <title>7</title>
       <link>https://SirKoto.github.io/publication-type/7/</link>
     </image>
+    
+    <item>
+      <title>Fast soft-tissue deformations with FEM - Master&#39;s Thesis</title>
+      <link>https://SirKoto.github.io/publication/fastfem/</link>
+      <pubDate>Tue, 28 Jun 2022 00:00:00 +0000</pubDate>
+      <guid>https://SirKoto.github.io/publication/fastfem/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Material Point Method (MPM) application to object deformation - Bachelor Thesis</title>

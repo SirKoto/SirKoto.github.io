@@ -5,8 +5,8 @@
     <link>https://SirKoto.github.io/tag/simulation/</link>
       <atom:link href="https://SirKoto.github.io/tag/simulation/index.xml" rel="self" type="application/rss+xml" />
     <description>Simulation</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2023 Pol Martín
-I did this with [Hugo](https://gohugo.io/) and [Academic](https://github.com/wowchemy/starter-hugo-academic)</copyright><lastBuildDate>Mon, 14 Sep 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2024 Pol Martín
+I did this with [Hugo](https://gohugo.io/) and [Academic](https://github.com/wowchemy/starter-hugo-academic)</copyright><lastBuildDate>Tue, 28 Jun 2022 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://SirKoto.github.io/media/icon_hu36b41f71f33cc8e1aec8948b0e13c529_2050_512x512_fill_lanczos_center_3.png</url>
       <title>Simulation</title>
@@ -106,6 +106,14 @@ I did this with [Hugo](https://gohugo.io/) and [Academic](https://github.com/wow
 &lt;p&gt;Many more GIFs can be found in this &lt;a href=&#34;https://drive.google.com/drive/folders/1t-WDatiCCti9cPGHokXEi5BOoFrqEd-R?usp=sharing&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Google Drive Folder&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;If you want to see more results, you can watch the following video. Be sure to increase the quality to HD.&lt;/p&gt;
 &lt;iframe src=&#34;https://drive.google.com/file/d/1k0eGkb2ltT_0sRpTId-lWCAh5Sybbbti/preview&#34; width=&#34;640&#34; height=&#34;480&#34; allow=&#34;autoplay&#34;&gt;&lt;/iframe&gt;</description>
+    </item>
+    
+    <item>
+      <title>Fast soft-tissue deformations with FEM - Master&#39;s Thesis</title>
+      <link>https://SirKoto.github.io/publication/fastfem/</link>
+      <pubDate>Tue, 28 Jun 2022 00:00:00 +0000</pubDate>
+      <guid>https://SirKoto.github.io/publication/fastfem/</guid>
+      <description></description>
     </item>
     
     <item>
